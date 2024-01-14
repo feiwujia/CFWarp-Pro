@@ -44,7 +44,8 @@ rred(){
 
 
 bit=`uname -m`
-version=`uname -r | awk -F "-" '{print $1}'`
+#version=`uname -r | awk -F "-" '{print $1}'`
+version=5.10.0
 main=`uname  -r | awk -F . '{print $1 }'`
 minor=`uname -r | awk -F . '{print $2}'`
 rv4=`ip a | grep global | awk 'NR==1 {print $2}' | cut -d'/' -f1`
